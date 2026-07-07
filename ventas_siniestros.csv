@@ -1,0 +1,5 @@
+id_venta,nombre_cliente,fecha_venta,monto,tipo_seguro,sucursal
+1,sergio sierra,2023-10-01,1500.50,vida,REFORMA
+2,MARIA GARCIA  ,2023-10-02,2000.00,autos,REFORMA
+3,juan perez,2023-10-03,1200.00,VIDA,INSURGENTES
+4, ana lopez,2023-10-04,3500.00,hogar,CENTRO
