@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: data-platform-project-501619 # <--- USA TU ID DE PROYECTO AQUÍ
+    schema: srv_seguros_ventas
+    tables:
+      - name: tbl_ventas_raw
