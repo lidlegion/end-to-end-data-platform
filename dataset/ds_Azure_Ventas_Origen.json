@@ -1,0 +1,49 @@
+{
+	"name": "ds_Azure_Ventas_Origen",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_SuraDataLake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "ventas_siniestros.csv",
+				"folderPath": "01-bronze/siniestros",
+				"fileSystem": "raw-data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "id_venta",
+				"type": "String"
+			},
+			{
+				"name": "nombre_cliente",
+				"type": "String"
+			},
+			{
+				"name": "fecha_venta",
+				"type": "String"
+			},
+			{
+				"name": "monto",
+				"type": "String"
+			},
+			{
+				"name": "tipo_seguro",
+				"type": "String"
+			},
+			{
+				"name": "sucursal",
+				"type": "String"
+			}
+		]
+	}
+}
